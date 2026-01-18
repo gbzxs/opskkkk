@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Playfair Display', serif;
+    background: linear-gradient(180deg, #ffd1dc, #ffe6f0);
+    overflow: hidden;
+}
+
+/* PÁGINAS */
+.pagina {
+    display: none;
+    height: 100vh;
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+}
+
+.pagina.ativa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FOTO */
+.foto {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+/* TÍTULO */
+.titulo {
+    font-size: 3rem;
+    color: #b3005e;
+    margin-bottom: 30px;
+}
+
+/* BOTÃO */
+.botao {
+    padding: 15px 35px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 30px;
+    background: #ff4d88;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: #e60073;
+    transform: scale(1.05);
+}
+
+/* TEXTO */
+.texto {
+    max-width: 800px;
+    background: rgba(255,255,255,0.65);
+    padding: 30px;
+    border-radius: 20px;
+    color: #7a003c;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.texto p {
+    margin-bottom: 20px;
+}
+
+.destaque {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.final {
+    font-weight: bold;
+}
+
+/* BÍBLIA */
+.biblia {
+    margin-top: 25px;
+    padding: 15px;
+    border: 1px solid rgba(185, 52, 233, 0.3);
+    border-radius: 10px;
+    font-style: italic;
+}
+
+/* CORAÇÕES */
+.heart {
+    position: fixed;
+    top: -10px;
+    font-size: 20px;
+    color: pink;
+    animation: cair linear infinite;
+}
+
+@keyframes cair {
+    to {
+        transform: translateY(110vh);
+        opacity: 0;
+    }
+}
